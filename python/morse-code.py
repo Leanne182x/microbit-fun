@@ -9,7 +9,6 @@ over = Image("00900:00090:99999:00090:00900")
 radio.on()
 while True:
     incoming = radio.receive()
-    gesture = accelerometer.get_gestures()
 
     if button_a.is_pressed() and button_b.is_pressed():
         display.show(over)
